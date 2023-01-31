@@ -39,7 +39,7 @@ img {
 .wrapper {
   display: grid;
   width: 100vw;
-  height: 1152;
+  height: max(1222px, 100vh);
   background: url(./images/antman-and-the-wasp-quantumania-newbutton-1673358667013.jpg);
   background-repeat:no-repeat;
   background-size:cover;
@@ -174,8 +174,6 @@ img {
     height: 400px;
     width: 1342px;
     display: grid;
-    grid-template-columns: minmax(624px, 800px) minmax(400px, 512px);
-    grid-template-areas: "left-main right-main";
     padding: 20px 50px 20px 50px;
     background: #16171a;
     column-gap: 30px;
