@@ -46,7 +46,7 @@ img {
   background-position: top;
   position: relative;
   grid-template-columns: 1fr;
-  grid-template-rows: 130px 1fr 1fr 50px;
+  grid-template-rows: 130px 552px 400px 50px;
   grid-template-areas: 
   "header"
   "main"
@@ -79,7 +79,7 @@ img {
     background-position: center;
     position: relative;
     height: 100px;
-    width: 100%;
+    width: 50%;;
 }
 
 .main {
@@ -114,8 +114,13 @@ img {
     background-position: center;
     position: relative;
     border-radius: 30px;
-    
+    transition: all .2s ease-in-out;
   }
+
+  .left-image:hover {
+    transform: scale(1.03); 
+  }
+
 
   .img {
     --_g: 10% /55% 55% no-repeat linear-gradient(#000 0 0);
