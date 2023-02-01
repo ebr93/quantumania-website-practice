@@ -39,17 +39,18 @@ img {
 .wrapper {
   display: grid;
   width: 100vw;
-  height: max(1222px, 100vh);
+  height: max(1752px, 100vh);
   background: url(./images/antman-and-the-wasp-quantumania-newbutton-1673358667013.jpg);
   background-repeat:no-repeat;
   background-size:cover;
   background-position: top;
   position: relative;
   grid-template-columns: 1fr;
-  grid-template-rows: 130px 552px 400px 50px;
+  grid-template-rows: 130px 552px 500px 400px 50px;
   grid-template-areas: 
   "header"
   "main"
+  "section-two"
   "section-one"
   "footer";
   /*row-gap: 15px;*/
@@ -187,16 +188,52 @@ img {
     display: grid;
     grid-template-rows: 1fr 3fr;
   }
-
-  .section-one {
-    grid-area: section-one;
-    height: 400px;
+  
+  .section-two {
+    grid-area: section-two;
     width: 1342px;
     display: grid;
-    padding: 20px 50px 20px 50px;
+    grid-template-columns: 1fr 889px 1fr;
     background: #16171a;
     column-gap: 30px;
     /*  background: var(--backup-detail); */
+    margin: 0px 20px 0px 20px;
+    border-radius: 30px;
+    justify-self: center;
+  }
+
+  .section-one-img {
+    height: 500px;
+    background: url(./images/BLF1535_TRL_comp.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: relative;
+    border-radius: 30px 0px 0px 30px;
+  }
+
+  .section-two-img {
+    height: 500px;
+    background: url(./images/BLF1535_TRL_comp.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 0px 30px 30px 0px;
+  }
+
+  .video-container {
+    align-self: center;
+    position: relative;
+  }
+
+  .section-one {
+    grid-area: section-one;
+    display: grid;
+    width: 1342px;
+    padding: 20px 50px 20px 50px;
+    background: #16171a;
+    column-gap: 30px;
     margin: 0px 20px 0px 20px;
     border-radius: 30px;
     justify-self: center;
